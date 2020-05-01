@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags === viewport - toda area visivel de uma pagina -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Alinhamento de texto</title>
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px; ">
+
+    <!-- AS CLASSES APRESENTADAS A SEGUIR PODEM SER USADAS EM OUTRAS TAGS ALÉM DOS EXEMPLOS DADOS -->
+ 
+    <!-- Parágrafo justicado -->
+    <p class="text-justify">Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque laoreet blandit dui, consectetur convallis felis gravida rhoncus. Vestibulum a libero iaculis, pulvinar ante ac, porttitor erat. Fusce volutpat porttitor massa eget pulvinar. Pellentesque accumsan mi ante, sit amet faucibus massa tincidunt sit amet. Duis vulputate urna at purus fermentum, condimentum luctus tortor tristique. Suspendisse diam ipsum, gravida quis lorem eget, accumsan volutpat tellus. Cras auctor arcu et fermentum dignissim.</p>
+
+
+    <br><hr>
+    <!--
+    -- Alinhamento rsponsivo --
+    class:text-<tela>-<alinhamento>
+    <tela>:sm, md, lg, xl
+    <alinhamento>: left, cente, right
+      -->
+    <!--Cada alinhamento será aplicado a aprtir do tamanho minimo exigigo de tela:sm, md, lg, xl -->
+    <p class="text-sm-right">Tela &gt; = 576px</p> <!-- small -->
+    <p class="text-md-right">Tela &gt; = 768</p> <!-- medium -->
+    <p class="text-lg-right">Tela &gt; = 992</p> <!-- large -->
+    <p class="text-xl-right">Tela &gt; = 1200</p> <!-- extra large -->
+   
+    
+
+    <br><hr>
+    <!--bg-success: apenas configura a cor de fundo, sendo opcional -->
+    <!--Elemento Block para inline===== bg:background -->
+    <h1 class="bg-success d-inline">Lorem ipsum</h1>
+    <p class="bg-warning d-inline">Pellentesque accumsan mi ante, sit amet faucibus massa tincidunt sit amet</p>
+
+    <br><hr>
+    <!--Elemento inline para block===== bg:background -->
+    <span class="bg-success d-block">Lorem ipsum dolor</span>
+    <span class="bg-warning d-block">Lorem ipsum dolor 2</span>
+
+
+
+    <br><hr>
+    <!-- Elemento Inline-block -->
+    <div class="bg-primary">
+      <h4 class="bg-success d-inline-block">Lorem ipsum</h4>
+      <h4 class="bg-warning d-inline-block" style="margin-top: 50px; width: 400px;">Lorem ipsum dolor</h4>
+      <!-- em um elemento inline-block consegue-se aplicar estilos como margin-top, with...enquanto um elemento inline não aceita essas configurações -->
+    </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
