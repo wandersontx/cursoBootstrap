@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags === viewport - toda area visivel de uma pagina -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Break Points</title>
+    <style type="text/css">
+     
+     /*
+      Criando media queries que é quando a pagina de comporta de determinada maneira a partir do tamanho da tela do dispositivo
+
+      Breakpoints pontos de quebra ou interrupção, a cada ponto é mudado o layout.
+
+
+      @media(max-width: 575.98px) === o .98 e para corrigir bugs de alguns navegadores
+     */
+
+
+      /*----Aplicando a partir do tamanho especificado-------*/
+      /*Small devices: quando a pagina >=576px aplicar formatação determinada*/
+      @media (min-width: 576.98px) { 
+          body{
+            background: green;
+          }
+       }
+
+       /*Medium devices (tablets):*/
+      @media (min-width: 768.98px) { 
+          body{
+            background:  yellow;
+          }
+       }
+
+      /* Large devices (desktops, 992px and up)*/
+      @media (min-width: 992.98px) { 
+        body{
+          background: blue;
+        }
+       }
+
+      /* Extra large devices (large desktops, 1200px and up)*/
+      @media (min-width: 1200.98px) and (max-width: 1300.98px){ 
+        body{
+          background: #DF01D7;
+        }
+       }
+
+       /*para telas maior de 1300px*/
+       @media(min-width: 1301.98px){
+        body{
+          background:#01A9DB;
+        }
+       }
+
+       /*Aplicando ATÉ o tamanho especificado*/ 
+       @media(max-width: 575.98px){
+        body{
+          background:#DF7401;
+        }
+       }
+    </style>
+
+  </head>
+  <body style="margin-bottom: 200px; padding: 16px; ">
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
