@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <!-- Required meta tags === viewport - toda area visivel de uma pagina -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+      .marcador{
+        background:#FE642E;
+        border:1px solid #04B4AE;
+      }
+
+      .marcador-container{
+        background:#088A4B;
+        border:1px solid #B404AE;
+      }
+
+    </style>
+
+   
+  </head>
+  <body>
+
+    <!--
+      container == centraliza o conteudo
+      container-fluid == ocupa toda pagina
+     -->
+    <div class="container marcador-container">
+      
+      <h2>Largura fixa</h2>
+      <div class="row">
+        <div class="marcador col">area 1</div>
+        <div class="marcador col">area 2</div>
+        <div class="marcador col">area 3</div>
+        <div class="marcador col">area 4</div>   
+      </div>
+
+
+      <br><hr>
+      <h2>Largura automatica (auto-layout)</h2>
+      <div class="row">
+        <div class="marcador col-2">area 1</div>
+        <div class="marcador col-4">area 2</div>
+        <div class="marcador col-6">area 3</div>               
+      </div>
+
+
+      <br><hr>
+      <h2>Largura igual empilhada (sm, md, lg, xl)</h2>      
+       <div class="row">
+        <div class="marcador col-sm">area 1</div>
+        <div class="marcador col-sm">area 2</div>
+        <div class="marcador col-sm">area 3</div>               
+      </div>
+
+
+      <br><hr>
+      <h2>Ordenando</h2>
+      <div class="row">
+        <div class="marcador col-md-4 order-3">area 1</div>
+        <div class="marcador col-md-4 order-1">area 2</div>
+        <div class="marcador col-md-4 order-2">area 3</div>        
+      </div>
+
+      <br><hr>
+      <h2>Offset</h2>
+       <div class="row">
+        <div class="marcador col-md-3 offset-md-2">Login...</div> 
+      </div>
+
+
+      <br><hr>
+      <h2>Offset múltiplos alinhamentos</h2>
+      <div class="row">
+        <div class="marcador col-md-3 offset-md-3">Conteudo 1</div>
+        <div class="marcador col-md-3 offset-md-3">Conteudo 2</div>
+      </div>
+
+
+      <br><hr>
+      <h2>Aninhamento</h2>
+      <!-- Cada row criada tem 12 colunas. ao criarmos uma 'subrow' está terá 12 colunas dividas de acordo com o tamanho da row 'pai' -->
+      <div class="row">
+        <div class="col-md-6" style="border: 2px solid white;">
+          col-md-6
+          <div class="row">
+            <!-- terá metade de col-md-6 da div "pai"-->
+          <div class="col-md-6 marcador">Conteúdo 1</div>
+        </div>
+        </div>
+        
+      </div>
+      <br><br>
+
+    </div><!--fim container -->
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
